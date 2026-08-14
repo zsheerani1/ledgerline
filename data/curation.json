@@ -1,0 +1,34 @@
+{
+  "_readme": "B's judgment layer, merged into signals.json at build time by id. status: new | reviewed | starred | parked | dead. fit/heat: H | M | L (or 1-9, build script maps 1-3 L, 4-6 M, 7-9 H). Entries whose id no longer appears in any fetch are moved to _retired by the build script, never silently dropped.",
+  "entries": {
+    "manual-alpine-hospitality-2026-08": {
+      "fit": "H",
+      "heat": "H",
+      "play": "epm_consolidation",
+      "status": "starred",
+      "note": "Post-completion reporting pain lands within 90 days. Warm intro via LGL."
+    },
+    "reed-meridian-sunsystems-2026-08": {
+      "fit": "H",
+      "heat": "M",
+      "play": "orphaned_sunsystems_takeover",
+      "status": "starred",
+      "note": "Backfilling a leaver on a dying system. Nurture: offer the EOL briefing note."
+    },
+    "fat-westhaven-fms-2026-08": {
+      "fit": "M",
+      "heat": "H",
+      "play": "fms_replacement_bid",
+      "status": "reviewed",
+      "note": "Deadline tight. Bid only if we can reuse the Kelsford response."
+    },
+    "ted-clairmont-erp-2026-08": {
+      "fit": "H",
+      "heat": "M",
+      "play": "ngo_multi_entity_consolidation",
+      "status": "reviewed",
+      "note": "Strong fit for the charity consolidation reference deck."
+    }
+  },
+  "_retired": {}
+}

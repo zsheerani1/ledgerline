@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Ledgerline — signals for finance-systems implementers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-row">
+      <h1 class="wordmark">Ledgerline</h1>
+      <div class="masthead-meta">
+        <button id="view-week" class="pill pill-toggle" aria-pressed="false">This week</button>
+        <button id="curate-toggle" class="pill pill-toggle" aria-pressed="false">Curate</button>
+        <button id="save-curation" class="pill pill-save" hidden disabled>No changes</button>
+        <span id="last-run" class="meta">last run: —</span>
+      </div>
+    </div>
+    <p class="strapline">Live sales triggers for finance-systems implementers · deals · migrations · tenders</p>
+  </header>
+
+  <section id="hot" class="hot" hidden>
+    <h2 class="section-label">Hot</h2>
+    <div id="hot-cards" class="hot-grid"></div>
+  </section>
+
+  <div class="filterbar">
+    <input id="q" type="search" placeholder="Search org, title, context" aria-label="Search signals" />
+    <select id="f-vertical" aria-label="Filter by vertical"></select>
+    <select id="f-geography" aria-label="Filter by geography"></select>
+    <select id="f-fit" aria-label="Filter by fit">
+      <option value="">fit: all</option><option value="H">fit: H</option>
+      <option value="M">fit: M</option><option value="L">fit: L</option>
+    </select>
+  </div>
+
+  <nav class="tabs" id="tabs" aria-label="Lanes">
+    <button class="tab is-active" data-lane="all">All</button>
+    <button class="tab" data-lane="deal">Deals</button>
+    <button class="tab" data-lane="migration">Migrations</button>
+    <button class="tab" data-lane="tender">Tenders</button>
+  </nav>
+
+  <main>
+    <ol id="cards" class="ledger" aria-live="polite"></ol>
+    <p id="empty" class="empty" hidden>No signals in this view. Fetchers run nightly at 03:00.</p>
+  </main>
+
+  <section id="inbox" class="inbox" hidden>
+    <div class="inbox-head">
+      <h2 class="section-label">Review inbox — fetched news, not yet signals</h2>
+      <button id="inbox-toggle" class="pill"><span id="inbox-count">0</span> candidates</button>
+    </div>
+    <ul id="inbox-items" class="inbox-list" hidden></ul>
+  </section>
+
+  <section class="eol">
+    <h2 class="section-label">EOL clock</h2>
+    <div id="eol-rows"></div>
+    <p id="eol-error" class="empty" hidden>Couldn't load the EOL clock.</p>
+  </section>
+
+  <footer class="freshness" id="freshness"></footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

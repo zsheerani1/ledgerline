@@ -1,0 +1,34 @@
+name: nightly
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install --no-audit --no-fund
+      - run: node scripts/validate.js
+      - run: node scripts/fetch_tenders.js
+        env:
+          TED_KEY: ${{ secrets.TED_KEY }}
+      - run: node scripts/fetch_jobs.js
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_KEY: ${{ secrets.ADZUNA_KEY }}
+          REED_KEY: ${{ secrets.REED_KEY }}
+      - run: node scripts/fetch_news.js
+      - run: node scripts/build_signals.js
+      - name: Commit updated signals
+        run: |
+          git config user.name "signals-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add site/data/signals.json site/data/eol_clock.json data/curation.json
+          git diff --cached --quiet || git commit -m "nightly $(date -I)"
+          git push

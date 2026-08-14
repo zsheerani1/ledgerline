@@ -1,0 +1,14 @@
+{
+  "name": "ledgerline",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch_tenders.js && node scripts/fetch_jobs.js && node scripts/fetch_news.js",
+    "build": "node scripts/build_signals.js",
+    "dev": "npx serve site",
+    "check": "node scripts/validate.js"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.10.1"
+  }
+}

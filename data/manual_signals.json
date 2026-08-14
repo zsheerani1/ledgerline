@@ -1,0 +1,18 @@
+{
+  "_readme": "B-curated. Hand-entered signals (mostly deals). Same schema as fetched signals but WITHOUT 'curated' — scores live in curation.json keyed by id. 'id' must be unique and stable; convention: manual-<org-slug>-<yyyy-mm>.",
+  "signals": [
+    {
+      "id": "manual-alpine-hospitality-2026-08",
+      "lane": "deal",
+      "source": "manual",
+      "source_url": "https://example.com/alpine-portfolio-acquisition",
+      "org": "Alpine Hospitality Group",
+      "title": "Acquires 4-site UK hotel portfolio",
+      "vertical": "hospitality",
+      "geography": "UK",
+      "system_context": "Target on Sage 200; acquirer reports in Excel",
+      "trigger_date": null,
+      "first_seen": "2026-08-14"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "generated": "2026-08-11T03:12:00Z",
+  "freshness": [
+    {
+      "source": "find_a_tender",
+      "origin": "tenders",
+      "last_success": "2026-08-11T03:04:00Z",
+      "count": 2
+    },
+    {
+      "source": "contracts_finder",
+      "origin": "tenders",
+      "last_success": "2026-08-11T03:05:00Z",
+      "count": 1
+    },
+    {
+      "source": "ted",
+      "origin": "tenders",
+      "last_success": "2026-08-11T03:06:00Z",
+      "count": 1
+    },
+    {
+      "source": "adzuna",
+      "origin": "jobs",
+      "last_success": "2026-08-11T03:09:00Z",
+      "count": 1
+    },
+    {
+      "source": "reed",
+      "origin": "jobs",
+      "last_success": "2026-08-11T03:10:00Z",
+      "count": 1
+    },
+    {
+      "source": "gnews",
+      "origin": "news",
+      "last_success": "2026-08-11T03:11:00Z",
+      "count": 2
+    }
+  ],
+  "signals": [
+    {
+      "id": "manual-alpine-hospitality-2026-08",
+      "lane": "deal",
+      "source": "manual",
+      "source_url": "https://example.com/alpine-portfolio-acquisition",
+      "org": "Alpine Hospitality Group",
+      "title": "Acquires 4-site UK hotel portfolio",
+      "vertical": "hospitality",
+      "geography": "UK",
+      "system_context": "Target on Sage 200; acquirer reports in Excel",
+      "trigger_date": null,
+      "first_seen": "2026-08-14",
+      "curated": {
+        "fit": "H",
+        "heat": "H",
+        "play": "epm_consolidation",
+        "status": "starred",
+        "note": "Post-completion reporting pain lands within 90 days. Warm intro via LGL."
+      }
+    },
+    {
+      "id": "reed-meridian-sunsystems-2026-08",
+      "lane": "migration",
+      "source": "reed",
+      "source_url": "https://example.com/reed-job-sunsystems-accountant",
+      "org": "Meridian Care Trust",
+      "title": "Hiring \"SunSystems management accountant\"",
+      "vertical": "nonprofit",
+      "geography": "UK",
+      "system_context": "SunSystems 4/5 orphaned post-Infor roadmap shift; est. support cliff 2027",
+      "trigger_date": "2027-10-01",
+      "first_seen": "2026-08-12",
+      "curated": {
+        "fit": "H",
+        "heat": "M",
+        "play": "orphaned_sunsystems_takeover",
+        "status": "starred",
+        "note": "Backfilling a leaver on a dying system. Nurture: offer the EOL briefing note."
+      }
+    },
+    {
+      "id": "fat-westhaven-fms-2026-08",
+      "lane": "tender",
+      "source": "find_a_tender",
+      "source_url": "https://example.com/find-a-tender-westhaven-fms",
+      "org": "Borough of Westhaven",
+      "title": "Financial management system replacement, £480k",
+      "vertical": "financial_services",
+      "geography": "UK",
+      "system_context": "Incumbent Unit4 contract expiring; CPV 48443000",
+      "trigger_date": "2026-08-20",
+      "first_seen": "2026-08-08",
+      "curated": {
+        "fit": "M",
+        "heat": "H",
+        "play": "fms_replacement_bid",
+        "status": "reviewed",
+        "note": "Deadline tight. Bid only if we can reuse the Kelsford response."
+      }
+    },
+    {
+      "id": "ted-clairmont-erp-2026-08",
+      "lane": "tender",
+      "source": "ted",
+      "source_url": "https://example.com/ted-clairmont-erp-finance",
+      "org": "Fondation Clairmont",
+      "title": "ERP finance module, multi-entity NGO consolidation",
+      "vertical": "nonprofit",
+      "geography": "FR",
+      "system_context": "Currently on legacy Cegid; 11 country entities",
+      "trigger_date": "2026-08-31",
+      "first_seen": "2026-08-09",
+      "curated": {
+        "fit": "H",
+        "heat": "M",
+        "play": "ngo_multi_entity_consolidation",
+        "status": "reviewed",
+        "note": "Strong fit for the charity consolidation reference deck."
+      }
+    },
+    {
+      "id": "adzuna-harzmann-gp-2026-08",
+      "lane": "migration",
+      "source": "adzuna",
+      "source_url": "https://example.com/adzuna-harzmann-dynamics-gp",
+      "org": "Harzmann Logistik GmbH",
+      "title": "Hiring \"Dynamics GP Finanzbuchhalter\"",
+      "vertical": "other",
+      "geography": "DE",
+      "system_context": "Dynamics GP end of support 2029; no cloud path from Microsoft",
+      "trigger_date": "2029-12-31",
+      "first_seen": "2026-08-10",
+      "curated": null
+    },
+    {
+      "id": "gnews-demo1",
+      "lane": "deal",
+      "source": "gnews",
+      "source_url": "https://example.com/news-coastal-inns",
+      "org": "Coastal Inns",
+      "title": "Coastal Inns in talks to buy rival chain - Hotel Weekly",
+      "vertical": "hospitality",
+      "geography": "UK",
+      "system_context": null,
+      "trigger_date": null,
+      "first_seen": "2026-08-11",
+      "needs_review": true,
+      "curated": null
+    },
+    {
+      "id": "gnews-demo2",
+      "lane": "deal",
+      "source": "gnews",
+      "source_url": "https://example.com/news-stiftung-merger",
+      "org": "Stiftung Nordlicht",
+      "title": "Stiftung Nordlicht kündigt Fusion an - Handelsblatt",
+      "vertical": "nonprofit",
+      "geography": "DE",
+      "system_context": null,
+      "trigger_date": null,
+      "first_seen": "2026-08-11",
+      "needs_review": true,
+      "curated": null
+    }
+  ]
+}

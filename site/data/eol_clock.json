@@ -1,0 +1,32 @@
+{
+  "_readme": "B-curated. One entry per dying/orphaned system. 'watch_keywords' drive the job fetchers; 'default_play' and 'what_it_means' are inherited by matched signals. Dates must be re-verified against vendor lifecycle pages before Phase 2 goes live.",
+  "systems": [
+    {
+      "key": "dynamics_gp",
+      "name": "Dynamics GP",
+      "eol_date": "2029-12-31",
+      "eol_label": "end of support",
+      "what_it_means": "No cloud path from Microsoft; BC migration is the assumed route.",
+      "watch_keywords": ["Dynamics GP", "Great Plains", "Finanzbuchhalter Dynamics GP"],
+      "default_play": "gp_to_cloud_migration"
+    },
+    {
+      "key": "sunsystems_4_5",
+      "name": "SunSystems 4/5",
+      "eol_date": "2027-10-01",
+      "eol_label": "support cliff (est.)",
+      "what_it_means": "Orphaned post-Infor roadmap shift; partners exiting.",
+      "watch_keywords": ["SunSystems", "Infor SunSystems", "SunSystems accountant"],
+      "default_play": "orphaned_sunsystems_takeover"
+    },
+    {
+      "key": "sage200_onprem",
+      "name": "Sage 200 on-prem",
+      "eol_date": "2032-03-01",
+      "eol_label": "roadmap sunset (est.)",
+      "what_it_means": "Long runway; nurture lane, not urgency lane.",
+      "watch_keywords": ["Sage 200", "Sage 200 accountant"],
+      "default_play": "sage_estate_modernisation"
+    }
+  ]
+}
