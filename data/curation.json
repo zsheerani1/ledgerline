@@ -7,28 +7,32 @@
       "play": "epm_consolidation",
       "status": "starred",
       "note": "Post-completion reporting pain lands within 90 days. Warm intro via LGL."
-    },
+    }
+  },
+  "_retired": {
     "reed-meridian-sunsystems-2026-08": {
       "fit": "H",
       "heat": "M",
       "play": "orphaned_sunsystems_takeover",
       "status": "starred",
-      "note": "Backfilling a leaver on a dying system. Nurture: offer the EOL briefing note."
+      "note": "Backfilling a leaver on a dying system. Nurture: offer the EOL briefing note.",
+      "retired_on": "2026-08-15"
     },
     "fat-westhaven-fms-2026-08": {
       "fit": "M",
       "heat": "H",
       "play": "fms_replacement_bid",
       "status": "reviewed",
-      "note": "Deadline tight. Bid only if we can reuse the Kelsford response."
+      "note": "Deadline tight. Bid only if we can reuse the Kelsford response.",
+      "retired_on": "2026-08-15"
     },
     "ted-clairmont-erp-2026-08": {
       "fit": "H",
       "heat": "M",
       "play": "ngo_multi_entity_consolidation",
       "status": "reviewed",
-      "note": "Strong fit for the charity consolidation reference deck."
+      "note": "Strong fit for the charity consolidation reference deck.",
+      "retired_on": "2026-08-15"
     }
-  },
-  "_retired": {}
+  }
 }
