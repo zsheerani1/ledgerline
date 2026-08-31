@@ -1,26 +1,58 @@
 {
-  "generated": "2026-08-30T08:39:08.568Z",
+  "generated": "2026-08-31T09:02:41.472Z",
   "freshness": [
     {
       "source": "find_a_tender",
       "origin": "tenders",
-      "last_success": "2026-08-30T08:38:55.767Z",
+      "last_success": "2026-08-31T09:02:26.122Z",
       "count": 6
     },
     {
       "source": "contracts_finder",
       "origin": "tenders",
-      "last_success": "2026-08-30T08:39:06.354Z",
+      "last_success": "2026-08-31T09:02:39.442Z",
       "count": 7
     },
     {
       "source": "gnews",
       "origin": "news",
-      "last_success": "2026-08-30T08:39:08.503Z",
+      "last_success": "2026-08-31T09:02:41.392Z",
       "count": 60
     }
   ],
   "signals": [
+    {
+      "id": "gnews-1a5eew2",
+      "lane": "deal",
+      "source": "gnews",
+      "fetch_origin": "news",
+      "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5FSFlRcXE4d2NJbFlGSk9TaFFuRVpmbnd4UkpLQTI5ai1lRUthd21MNFBsVjlNajdlQzZ0azlFUGtlaGtWZE96U0dFUXFaWXBpbXRzUUdMMGg?oc=5",
+      "org": "Signo Hospitality",
+      "title": "Signo Hospitality übernimmt Mercure Hotel Mannheim - Presseportal",
+      "vertical": "hospitality",
+      "geography": "EU",
+      "system_context": null,
+      "trigger_date": null,
+      "first_seen": "2026-08-31",
+      "needs_review": true,
+      "curated": null
+    },
+    {
+      "id": "gnews-uoibwk",
+      "lane": "deal",
+      "source": "gnews",
+      "fetch_origin": "news",
+      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVUMwb1BoUEVTbWszdXA3VVZrc194ZG01Mnduc2toMUN1WWhkRm5MbzAzWjg1WTRQRXVxaGpSV0ZxREZBR0FlZUhqVnNqZC0yZFNvY0Ywbk91dU81RnN1Y1hJUks2MW1uVzVDbTg1OE5uQ2RWdkhkV1pwQkRDbWlDeUhjZjl6ZmpBb0lNOVN2ZzgxOURKNzR1bkRB?oc=5",
+      "org": "Übernahme: Nächster Revo-Erbe in den Startlöchern?",
+      "title": "Übernahme: Nächster Revo-Erbe in den Startlöchern? - Allgemeine Hotel- und Gastronomie-Zeitung | ahgz",
+      "vertical": "hospitality",
+      "geography": "EU",
+      "system_context": null,
+      "trigger_date": null,
+      "first_seen": "2026-08-31",
+      "needs_review": true,
+      "curated": null
+    },
     {
       "id": "gnews-1infmq0",
       "lane": "deal",
@@ -189,22 +221,6 @@
       "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUnBWSUJBdFhBV2NjdnhDaTY0bzd1aHloa1dVcllTLVVZYXM0TzR2REVFNzVrTU54Vk52RGtlWGNyV1IwWGpZT1NPcXNUcVAydGJaZ2pGaHhrMnlQNC1wTUhEMlBDVEZlZEFvemJBbGI0OU4ybU56SUZYWWxxaHo3Y0lQWlBMZURC?oc=5",
       "org": "Heimatquartier Hotels",
       "title": "Heimatquartier Hotels übernimmt Strandhotel Sylt - Tophotel.de",
-      "vertical": "hospitality",
-      "geography": "EU",
-      "system_context": null,
-      "trigger_date": null,
-      "first_seen": "2026-08-29",
-      "needs_review": true,
-      "curated": null
-    },
-    {
-      "id": "gnews-hoz5mn",
-      "lane": "deal",
-      "source": "gnews",
-      "fetch_origin": "news",
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeFRUQy1qRHlkdDVZSThraDAxTDg1TXNNMk9TWG1JTEp5UDRBeHBqb1d3bDRidko3TC1weWJNdHJNcFNXM21PdUZ4b1pLZmRNS05wckdQWDlWZFZLdkZHX2lOYTZNZTVlUWdpWGMxdDZ3M0Z5SDVaNUUzY0N5eENuem9hOXByQ000Ukd3OU5aTHZacGRzSENLZmUzR0tpZHEyOUJ4UWlWNE42SmNGblhuZFh0S2M?oc=5",
-      "org": "COTP sichert sich weiteres Hotel aus der Revo-Insolvenz",
-      "title": "COTP sichert sich weiteres Hotel aus der Revo-Insolvenz - hogapage",
       "vertical": "hospitality",
       "geography": "EU",
       "system_context": null,
@@ -646,22 +662,6 @@
       "org": "Roll up roll up for the great higher education fire sale",
       "title": "Roll up roll up for the great higher education fire sale - Wonkhe",
       "vertical": "nonprofit",
-      "geography": "EU",
-      "system_context": null,
-      "trigger_date": null,
-      "first_seen": "2026-08-21",
-      "needs_review": true,
-      "curated": null
-    },
-    {
-      "id": "gnews-96gykz",
-      "lane": "deal",
-      "source": "gnews",
-      "fetch_origin": "news",
-      "source_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQN1dpSVhVdmhYWU0zRjZmV09yNVY3bWFEZUFGVFRHMlc3R1c1MDM3RG9YNWlZMElDamxscmlmc2lFckxldmdwamQtbUZQX1pBNjFrdTliVjF1SjRxSVpMTkc4ODN4QkpRZG9SMlJKUE9qeXdXeER6NjRrTTB3VTBHSFBENXhmQnI5U1o4Z3MzMUdLUTZzam1PMS14MUEyc2xkdzJWQVlRcnUtODhoaVk1TTF0UGdDbFJJSWNvSFRvQXMzMGQ3bjVtNmg1MA?oc=5",
-      "org": "NGG spricht von 500 Kündigungen bei geplanter Prism-Übernahm",
-      "title": "NGG spricht von 500 Kündigungen bei geplanter Prism-Übernahme von 24 Revo-Hotels - tageskarte.io",
-      "vertical": "hospitality",
       "geography": "EU",
       "system_context": null,
       "trigger_date": null,
